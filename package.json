@@ -1,0 +1,56 @@
+{
+  "name": "revit-screen-capture-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for capturing and analyzing Revit windows in real-time",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "revit-screen-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node init && node src/index.js",
+    "dev": "node init && node --inspect src/index.js",
+    "test": "node test/test.js",
+    "build": "node init && echo 'No build step required for Node.js'",
+    "install-global": "npm install -g .",
+    "setup": "npm install && npm run create-config"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "node-window-manager": "^2.2.4",
+    "screenshot-desktop": "^1.12.7",
+    "sharp": "^0.32.0",
+    "tesseract.js": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "win32"
+  ],
+  "keywords": [
+    "revit",
+    "bim",
+    "mcp",
+    "screen-capture",
+    "ocr",
+    "autodesk",
+    "claude",
+    "ai-assistant"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/revit-screen-capture-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/revit-screen-capture-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/revit-screen-capture-mcp#readme"
+}
